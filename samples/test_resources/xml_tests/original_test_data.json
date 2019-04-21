@@ -1,0 +1,42 @@
+{
+  "PERSONS": {
+    "PERSON": [
+      {
+        "FIRST_NAME": "Lector",
+        "LAST_NAME": "Pythonov",
+        "YEAR_OF_BIRTH": "1991",
+        "MONTH_OF_BIRTH": "Jan",
+        "DAY_OF_BIRTH": "31",
+        "COMPANY": "Huhhle",
+        "PROJECT": "Cleaning department",
+        "ROLE": "Looker at window",
+        "ROOM": "123",
+        "HOBBY": "Adulation"
+      },
+      {
+        "FIRST_NAME": "YOUR_FIRST_NAME",
+        "LAST_NAME": "YOUR_LAST_NAME",
+        "YEAR_OF_BIRTH": "YOUR_YYYY",
+        "MONTH_OF_BIRTH": "YOUR_Month",
+        "DAY_OF_BIRTH": "YOUR_DD",
+        "COMPANY": "YOUR_COMPANY",
+        "PROJECT": "YOUR_PROJECT",
+        "ROLE": "YOUR_ROLE",
+        "ROOM": "YOUR_ROOM",
+        "HOBBY": "YOUR_HOBBY"
+      },
+      {
+        "FIRST_NAME": "TEST_FIRST_NAME",
+        "LAST_NAME": "TEST_LAST_NAME",
+        "YEAR_OF_BIRTH": "2000",
+        "MONTH_OF_BIRTH": "May",
+        "DAY_OF_BIRTH": "11",
+        "COMPANY": "TEST_COMPANY",
+        "PROJECT": "TEST_PROJECT",
+        "ROLE": "TEST_ROLE",
+        "ROOM": "TEST_ROOM",
+        "HOBBY": "TEST_HOBBY"
+      }
+    ]
+  }
+}
