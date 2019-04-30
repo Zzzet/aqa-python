@@ -36,7 +36,7 @@ class XmlProcessor:
 
     def save_as_json(self, path):
         as_js = json.dumps(self.document)
-        with open(get_abs_path(path), "w+") as fd:
+        with open(get_abs_path(path), "w") as fd:
             fd.write(as_js)
 
 

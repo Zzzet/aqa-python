@@ -27,7 +27,7 @@ class TestXmlProcessor:
         xml_as_dict = XmlProcessor(test_data_path) \
             .convert_to_dict().get_as_dict()
 
-        with open(get_abs_path(control_orig_json_path), 'r') as f:
+        with open(get_abs_path(control_orig_json_path)) as f:
             orig_js = json.load(f)
 
         result = diff(xml_as_dict, orig_js)
@@ -58,10 +58,10 @@ class TestXmlProcessor:
         self.replace_values(xmlproc)
         xmlproc.save_as_json(upd_test_data_path)
 
-        with open(get_abs_path(control_upd_json_path), 'r') as f:
+        with open(get_abs_path(control_upd_json_path)) as f:
             control_js = json.load(f)
 
-        with open(get_abs_path(upd_test_data_path), 'r') as f:
+        with open(get_abs_path(upd_test_data_path)) as f:
             test_js = json.load(f)
 
         result = diff(control_js, test_js)
