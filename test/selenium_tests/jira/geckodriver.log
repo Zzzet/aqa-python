@@ -1,0 +1,266 @@
+1557010925609	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.EzLOB6H2wsN3"
+Gtk-Message: 02:02:05.820: Failed to load module "appmenu-gtk-module"
+1557010926217	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557010926217	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557010926217	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 02:02:07.134: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:02:07.500: Failed to load module "appmenu-gtk-module"
+1557010928315	Marionette	INFO	Listening on port 32941
+1557010928321	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557010931986	Marionette	INFO	Stopped listening on port 32941
+1557010948997	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.dgZMmXsEMsXP"
+Gtk-Message: 02:02:29.173: Failed to load module "appmenu-gtk-module"
+1557010949489	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557010949489	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557010949489	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 02:02:30.296: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:02:30.561: Failed to load module "appmenu-gtk-module"
+1557010951307	Marionette	INFO	Listening on port 33655
+1557010951428	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+1557011205496	Marionette	INFO	Stopped listening on port 33655
+1557071648921	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.YSUPaZ1egUAa"
+Gtk-Message: 18:54:09.110: Failed to load module "appmenu-gtk-module"
+1557071649402	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557071649402	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557071649402	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 18:54:10.112: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 18:54:10.397: Failed to load module "appmenu-gtk-module"
+1557071651302	Marionette	INFO	Listening on port 40629
+1557071651335	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557071652666	Marionette	INFO	Stopped listening on port 40629
+1557072115804	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.6fIOC7EhFRqc"
+Gtk-Message: 19:01:55.985: Failed to load module "appmenu-gtk-module"
+1557072116353	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557072116354	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557072116354	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 19:01:57.169: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 19:01:57.480: Failed to load module "appmenu-gtk-module"
+1557072118228	Marionette	INFO	Listening on port 43573
+1557072118324	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557072120031	Marionette	INFO	Stopped listening on port 43573
+[Parent 7569, Gecko_IOThread] WARNING: pipe error (70): Connection reset by peer: file /builddir/build/BUILD/firefox-66.0.3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 7569, Gecko_IOThread] WARNING: pipe error (74): Connection reset by peer: file /builddir/build/BUILD/firefox-66.0.3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1557072681266	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Wb3GdXrUD0dW"
+Gtk-Message: 19:11:21.635: Failed to load module "appmenu-gtk-module"
+1557072682310	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557072682310	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557072682310	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 19:11:23.767: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 19:11:24.090: Failed to load module "appmenu-gtk-module"
+1557072684674	Marionette	INFO	Listening on port 35109
+1557072684752	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557072686654	Marionette	INFO	Stopped listening on port 35109
+[Parent 8051, Gecko_IOThread] WARNING: pipe error (77): Connection reset by peer: file /builddir/build/BUILD/firefox-66.0.3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1557074869905	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.lRz1OoDejr9Z"
+Gtk-Message: 19:47:50.075: Failed to load module "appmenu-gtk-module"
+1557074870407	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557074870407	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557074870407	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 19:47:51.155: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 19:47:51.554: Failed to load module "appmenu-gtk-module"
+1557074872028	Marionette	INFO	Listening on port 45939
+1557074872124	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557074873720	Marionette	INFO	Stopped listening on port 45939
+[Parent 11422, Gecko_IOThread] WARNING: pipe error (74): Connection reset by peer: file /builddir/build/BUILD/firefox-66.0.3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1557075361857	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Q1S1yVwr1r4C"
+Gtk-Message: 19:56:02.037: Failed to load module "appmenu-gtk-module"
+1557075362354	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557075362354	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557075362354	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 19:56:03.145: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 19:56:03.399: Failed to load module "appmenu-gtk-module"
+1557075364196	Marionette	INFO	Listening on port 37833
+1557075364312	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557075364514	Marionette	INFO	Stopped listening on port 37833
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 834: Error: Connection is not open.
+1557075382442	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.LkdVlsEq0ezH"
+Gtk-Message: 19:56:22.660: Failed to load module "appmenu-gtk-module"
+1557075383079	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557075383080	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557075383080	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 19:56:23.939: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 19:56:24.322: Failed to load module "appmenu-gtk-module"
+1557075385284	Marionette	INFO	Listening on port 42431
+1557075385462	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557075385798	Marionette	INFO	Stopped listening on port 42431
+[Parent 13430, Gecko_IOThread] WARNING: pipe error (74): Connection reset by peer: file /builddir/build/BUILD/firefox-66.0.3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 834: Error: Connection is not open.
+1557075393015	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.R8PwQ02mQP0K"
+Gtk-Message: 19:56:33.223: Failed to load module "appmenu-gtk-module"
+1557075393580	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557075393581	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557075393581	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 19:56:34.452: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 19:56:34.723: Failed to load module "appmenu-gtk-module"
+1557075395458	Marionette	INFO	Listening on port 43113
+1557075395539	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557075395763	Marionette	INFO	Stopped listening on port 43113
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 834: Error: Connection is not open.
+1557075502105	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.1EbghAacv6aP"
+Gtk-Message: 19:58:22.292: Failed to load module "appmenu-gtk-module"
+1557075502633	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557075502634	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557075502634	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 19:58:23.554: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 19:58:23.931: Failed to load module "appmenu-gtk-module"
+1557075504556	Marionette	INFO	Listening on port 36429
+1557075504628	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557075506210	Marionette	INFO	Stopped listening on port 36429
+1557091163706	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.xEQXUT8JMJGe"
+Gtk-Message: 00:19:23.871: Failed to load module "appmenu-gtk-module"
+1557091164187	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557091164188	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557091164188	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 00:19:24.998: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 00:19:25.352: Failed to load module "appmenu-gtk-module"
+1557091165925	Marionette	INFO	Listening on port 40151
+1557091166054	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557091166311	Marionette	INFO	Stopped listening on port 40151
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 834: Error: Connection is not open.
+1557091610648	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.eQ8gZ1ShEWsm"
+Gtk-Message: 00:26:50.826: Failed to load module "appmenu-gtk-module"
+1557091611161	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557091611161	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557091611161	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 00:26:51.980: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 00:26:52.290: Failed to load module "appmenu-gtk-module"
+1557091612925	Marionette	INFO	Listening on port 43017
+1557091612965	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 10153, Gecko_IOThread] WARNING: pipe error (77): Connection reset by peer: file /builddir/build/BUILD/firefox-66.0.3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 10153, Gecko_IOThread] WARNING: pipe error (74): Connection reset by peer: file /builddir/build/BUILD/firefox-66.0.3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1557091800202	Marionette	INFO	Stopped listening on port 43017
+1557092020595	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.cG5Uj4H1SEX6"
+Gtk-Message: 00:33:40.795: Failed to load module "appmenu-gtk-module"
+1557092021179	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557092021180	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557092021180	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 00:33:42.070: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 00:33:42.482: Failed to load module "appmenu-gtk-module"
+1557092023194	Marionette	INFO	Listening on port 35893
+1557092023212	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557092069949	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.qbGC8tYPRZhu"
+Gtk-Message: 00:34:30.120: Failed to load module "appmenu-gtk-module"
+1557092070415	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557092070415	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557092070415	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 00:34:31.144: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 00:34:31.399: Failed to load module "appmenu-gtk-module"
+1557092072230	Marionette	INFO	Listening on port 32819
+1557092072277	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557092095863	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.cB7ajfwvbXk8"
+Gtk-Message: 00:34:56.034: Failed to load module "appmenu-gtk-module"
+1557092096328	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557092096328	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557092096328	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 00:34:57.105: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 00:34:57.395: Failed to load module "appmenu-gtk-module"
+1557092098109	Marionette	INFO	Listening on port 36921
+1557092098180	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1557092159402	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.oFr8AmaqgzxK"
+Gtk-Message: 00:35:59.572: Failed to load module "appmenu-gtk-module"
+1557092159856	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557092159857	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557092159857	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 00:36:00.556: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 00:36:00.862: Failed to load module "appmenu-gtk-module"
+1557092161661	Marionette	INFO	Listening on port 35169
+1557092161732	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+** (/usr/lib64/firefox/firefox:13171): CRITICAL **: 00:36:03.101: Failed to get connection to xfconfd: Could not connect: Permission denied
+1557092190588	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.BNN0HHfHvg2q"
+Gtk-Message: 00:36:30.800: Failed to load module "appmenu-gtk-module"
+1557092191123	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557092191123	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557092191123	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 00:36:31.877: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 00:36:32.266: Failed to load module "appmenu-gtk-module"
+1557092192910	Marionette	INFO	Listening on port 40823
+1557092193015	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+** (/usr/lib64/firefox/firefox:13610): CRITICAL **: 00:36:34.418: Failed to get connection to xfconfd: Could not connect: Permission denied
+1557092210469	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.MucoEajpbNOJ"
+Gtk-Message: 00:36:50.649: Failed to load module "appmenu-gtk-module"
+1557092210943	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557092210943	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557092210944	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 00:36:51.665: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 00:36:51.938: Failed to load module "appmenu-gtk-module"
+1557092212740	Marionette	INFO	Listening on port 35927
+1557092212802	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+** (/usr/lib64/firefox/firefox:14022): CRITICAL **: 00:36:59.674: Failed to get connection to xfconfd: Could not connect: Permission denied
+1557092242579	Marionette	INFO	Stopped listening on port 35927
+[Parent 13409, Gecko_IOThread] WARNING: pipe error (82): Connection reset by peer: file /builddir/build/BUILD/firefox-66.0.3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 13409, Gecko_IOThread] WARNING: pipe error (74): Connection reset by peer: file /builddir/build/BUILD/firefox-66.0.3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1557092248436	Marionette	INFO	Stopped listening on port 40823
+1557092251801	Marionette	INFO	Stopped listening on port 35169
+[Parent 12038, Gecko_IOThread] WARNING: pipe error (74): Connection reset by peer: file /builddir/build/BUILD/firefox-66.0.3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1557092257798	Marionette	INFO	Stopped listening on port 32819
+1557092259526	Marionette	INFO	Stopped listening on port 35893
+1557092300504	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.nVo6EL5t64pM"
+Gtk-Message: 00:38:20.714: Failed to load module "appmenu-gtk-module"
+1557092301096	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557092301097	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557092301097	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 00:38:21.971: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 00:38:22.264: Failed to load module "appmenu-gtk-module"
+1557092303083	Marionette	INFO	Listening on port 39019
+1557092303140	Marionette	WARN	TLS certificate errors will be ignored for this session
+Crash Annotation GraphicsCriticalError: |[C0][GFX1-]: Receive IPC close with reason=AbnormalShutdown (t=11.8942) [GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 14654, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builddir/build/BUILD/firefox-66.0.3/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1557092332231	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.mhKVud8FPzSL"
+Gtk-Message: 00:38:52.435: Failed to load module "appmenu-gtk-module"
+1557092332900	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557092332901	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557092332901	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 00:38:54.134: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 00:38:54.407: Failed to load module "appmenu-gtk-module"
+1557092335096	Marionette	INFO	Listening on port 35175
+1557092335156	Marionette	WARN	TLS certificate errors will be ignored for this session
+1557092395059	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.van3rY6oTCe4"
+Gtk-Message: 00:39:55.235: Failed to load module "appmenu-gtk-module"
+1557092395561	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557092395562	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557092395562	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 00:39:56.389: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 00:39:56.865: Failed to load module "appmenu-gtk-module"
+1557092397596	Marionette	INFO	Listening on port 39033
+1557092397669	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+** (/usr/lib64/firefox/firefox:15603): CRITICAL **: 00:40:00.089: Failed to get connection to xfconfd: Could not connect: Permission denied
+1557092512866	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.w7HPzlnQW3oi"
+Gtk-Message: 00:41:53.099: Failed to load module "appmenu-gtk-module"
+1557092513626	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557092513626	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557092513626	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 00:41:54.508: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 00:41:54.968: Failed to load module "appmenu-gtk-module"
+1557092515490	Marionette	INFO	Listening on port 39349
+1557092515583	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+** (/usr/lib64/firefox/firefox:16260): CRITICAL **: 00:42:18.799: Failed to get connection to xfconfd: Could not connect: Permission denied
+1557092623069	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.w2vhAaPtDICG"
+Gtk-Message: 00:43:43.267: Failed to load module "appmenu-gtk-module"
+1557092623601	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1557092623601	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1557092623601	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Gtk-Message: 00:43:44.703: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 00:43:45.102: Failed to load module "appmenu-gtk-module"
+1557092625766	Marionette	INFO	Listening on port 33727
+1557092625807	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+** (/usr/lib64/firefox/firefox:16902): CRITICAL **: 00:43:47.168: Failed to get connection to xfconfd: Could not connect: Permission denied
