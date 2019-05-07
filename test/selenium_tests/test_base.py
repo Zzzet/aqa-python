@@ -13,5 +13,5 @@ class BaseTest:
         print("  SETUP")
         DriverContainer().create_driver(DriverContainer)
         yield
-        self.driver.close()
+
         print("  TEARDOWN ")

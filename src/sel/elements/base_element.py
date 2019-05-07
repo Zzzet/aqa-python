@@ -16,6 +16,11 @@ class BaseElement:
         self.driver = DriverContainer().get_driver(DriverContainer)
         return
 
+    def wait_until_visible(self)-> WebElement:
+        element = WebDriverWait(self.driver, self.timeout).until(
+            EC.visibility_of_element_located(self.selector))
+        return element
+
     def wait_until_present(self)-> WebElement:
         element = WebDriverWait(self.driver, self.timeout).until(
             EC.presence_of_element_located(self.selector))
