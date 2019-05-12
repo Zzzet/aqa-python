@@ -9,7 +9,6 @@ from util.driver_container import DriverContainer
 
 class Header:
 
-
     def __init__(self):
         self.driver = DriverContainer().get_driver(DriverContainer)
 

@@ -8,7 +8,11 @@ from selenium_tests.test_base import BaseTest
 
 class TestJira(BaseTest):
 
-    def test_login(self):
+
+    def setup_method(self, method):
+        self.login()
+
+    def login(self):
         LoginPage().open() \
             .enter_username("DmytroKarpenko") \
             .enter_password("DmytroKarpenko") \
