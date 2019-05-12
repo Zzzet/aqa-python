@@ -7,8 +7,8 @@ class Input(BaseElement):
         self.selector = selector
 
     def type(self, text):
-        self.wait_until_visible().send_keys(text)
+        self.wait_until_clickable().send_keys(text)
         pass
 
     def get_text(self):
-        return self.wait_until_visible().text
+        return self.wait_until_clickable().text
