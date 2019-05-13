@@ -1,4 +1,5 @@
-from selenium.common.exceptions import ElementClickInterceptedException, StaleElementReferenceException
+from selenium.common.exceptions import ElementClickInterceptedException, StaleElementReferenceException, \
+    NoSuchElementException, ElementNotVisibleException
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
@@ -20,6 +21,8 @@ class BaseElement:
     def wait_until_clickable(self) -> WebElement:
         element = WebDriverWait(self.driver, self.timeout,
                                 ignored_exceptions=(ElementClickInterceptedException,
+                                                    ElementNotVisibleException,
+                                                    NoSuchElementException,
                                                     StaleElementReferenceException)).until(
             EC.element_to_be_clickable(self.selector))
         return element

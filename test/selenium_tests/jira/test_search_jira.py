@@ -1,22 +1,15 @@
-from sel.pages.create_issue_page import CreateIssuePage
-from sel.pages.home_page import HomePage
-from sel.pages.issue_page import IssuePage
+import pytest
 
-from sel.pages.login_page import LoginPage
+from sel.pages.home_page import HomePage
 from selenium_tests.test_base import BaseTest
 
 
+@pytest.mark.usefixtures("default_login")
 class TestJira(BaseTest):
 
-
-    def setup_method(self, method):
-        self.login()
-
-    def login(self):
-        LoginPage().open() \
-            .enter_username("DmytroKarpenko") \
-            .enter_password("DmytroKarpenko") \
-            .click_login()
+    def test_search(self):
+        HomePage().header.open_search()
+        pass
 
     # no such issue reporter = DmytroKarpenko and status = Resolved
 

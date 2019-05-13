@@ -1,6 +1,6 @@
 from sel.pages.create_issue_page import CreateIssuePage
 from sel.pages.home_page import HomePage
-from sel.pages.issue_page import IssuePage
+from sel.pages.issue_details_page import IssuePage
 
 from sel.pages.login_page import LoginPage
 from selenium_tests.test_base import BaseTest
