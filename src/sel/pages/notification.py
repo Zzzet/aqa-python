@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
-from sel.elements.base_element import BaseElement
-from sel.pages.BasePage import BasePage
+from src.sel.elements.base_element import BaseElement
+from src.sel.pages.BasePage import BasePage
 
 
 class Notification(BasePage):

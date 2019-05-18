@@ -1,6 +1,6 @@
-from sel.pages.notification import Notification
-from sel.pages.header import Header
-from util.driver_container import DriverContainer
+from src.sel.pages.notification import Notification
+from src.sel.pages.header import Header
+from src.util.driver_container import DriverContainer
 
 
 class HomePage:

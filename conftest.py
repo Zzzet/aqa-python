@@ -1,6 +1,6 @@
 import pytest
 
-from sel.pages.login_page import LoginPage
+from src.sel.pages.login_page import LoginPage
 
 
 def pytest_addoption(parser):

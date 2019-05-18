@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
-from sel.elements.base_element import BaseElement
-from util.driver_container import DriverContainer
+from src.sel.elements.base_element import BaseElement
+from src.util.driver_container import DriverContainer
 
 
 class LoginPage:

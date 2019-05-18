@@ -1,7 +1,7 @@
 import pytest
 
-from sel.pages.home_page import HomePage
-from selenium_tests.test_base import BaseTest
+from src.sel.pages.home_page import HomePage
+from test.selenium_tests.test_base import BaseTest
 
 
 @pytest.mark.usefixtures("default_login")

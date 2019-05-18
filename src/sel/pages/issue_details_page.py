@@ -1,10 +1,10 @@
 from selenium.webdriver.common.by import By
 
-from sel.elements.base_element import BaseElement
-from sel.pages.create_issue_page import CreateIssuePage
-from sel.pages.notification import Notification
-from sel.pages.header import Header
-from util.driver_container import DriverContainer
+from src.sel.elements.base_element import BaseElement
+from src.sel.pages.create_issue_page import CreateIssuePage
+from src.sel.pages.notification import Notification
+from src.sel.pages.header import Header
+from src.util.driver_container import DriverContainer
 
 
 class IssuePage:
