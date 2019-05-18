@@ -11,7 +11,7 @@ class BaseTest:
     @pytest.fixture(scope="function", autouse=True)
     def setup(self):
         print("  SETUP")
-        DriverContainer().create_driver(DriverContainer)
+        DriverContainer().create_driver_remote(DriverContainer)
         yield
 
         print("  TEARDOWN ")
