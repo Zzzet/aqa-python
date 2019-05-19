@@ -1,4 +1,4 @@
-from sel.elements.base_element import BaseElement
+from src.sel.elements.base_element import BaseElement
 
 
 class Input(BaseElement):
@@ -7,8 +7,8 @@ class Input(BaseElement):
         self.selector = selector
 
     def type(self, text):
-        self.wait_until_clickable().send_keys(text)
+        self.wait_until_ready().send_keys(text)
         pass
 
     def get_text(self):
-        return self.wait_until_clickable().text
+        return self.wait_until_ready().text

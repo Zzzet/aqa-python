@@ -3,9 +3,15 @@ import pytest
 from sel.pages.login_page import LoginPage
 
 
+def pytest_addoption(parser):
+    parser.addoption(
+        "--url",
+        action="store",
+        default="https://jira.hillel.it/"
+    )
+
+
 @pytest.fixture()
 def default_login():
     LoginPage().open() \
-        .enter_username("DmytroKarpenko") \
-        .enter_password("DmytroKarpenko") \
-        .click_login()
+        .login_as("DmytroKarpenko", "DmytroKarpenko")

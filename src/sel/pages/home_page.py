@@ -1,12 +1,19 @@
-from sel.pages.notification import Notification
-from sel.pages.header import Header
-from util.driver_container import DriverContainer
+from selenium.webdriver.common.by import By
+
+from src.sel.pages.notification import Notification
+from src.sel.pages.header import Header
+from src.util.driver_container import DriverContainer
+
+from src.sel.elements.base_element import BaseElement
+from src.sel.pages.base_page import BasePage
 
 
-class HomePage:
-
+class HomePage(BasePage):
     notification = Notification()
     header = Header()
+
     def __init__(self):
         self.driver = DriverContainer().get_driver(DriverContainer)
 
+    def introduction_text(self) -> str:
+        return BaseElement((By.CSS_SELECTOR, "#gadget-10000")).wait_until_ready().text
