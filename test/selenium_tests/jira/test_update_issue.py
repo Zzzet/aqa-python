@@ -13,46 +13,31 @@ from src.sel.pages.header import Header
 @pytest.mark.usefixtures("default_login")
 class TestCreateIssues(BaseTest):
 
-    def test_login(self):
-        LoginPage().open() \
-            .enter_username("DmytroKarpenko") \
-            .enter_password("DmytroKarpenko") \
-            .click_login()
-
-        HomePage().header.click_create_btn()
-
-        CreateIssuePage().set_project("Webinar") \
-            .set_issue_type("Story") \
-            .set_summary("My issue") \
+    def test_update_summary(self, create_issue):
+        IssuePage().click_edit_btn()
+        CreateIssuePage() \
+            .set_summary("upd") \
             .click_submit_btn()
 
-        HomePage().notification.open_issue()
-
+    def test_update_priority(self, create_issue):
         IssuePage().click_edit_btn()
+        CreateIssuePage() \
+            .set_priority("Low") \
+            .click_submit_btn()
 
-        CreateIssuePage().set_summary("upd") \
-            .set_assignee("DmytroKarpenko") \
-            .set_priority("High") \
-            .click_update_btn()
+    def test_update_assignee(self, create_issue):
+        IssuePage().click_edit_btn()
+        CreateIssuePage() \
+            .set_assignee("Andrew Pospelko") \
+            .click_submit_btn()
 
-    def test_update_summary(self):
-        self.create_issue("my issue")
-        pass
-
-    def test_update_priority(self):
-        self.create_issue("my issue")
-        pass
-
-    def test_update_assignee(self):
-        self.create_issue("my issue")
-        pass
-
-    def create_issue(self, summary):
+    @pytest.fixture
+    def create_issue(self):
         Header().click_create_btn()
 
         CreateIssuePage().set_project("Webinar") \
             .set_issue_type("Story") \
-            .set_summary(summary) \
+            .set_summary("My issue") \
             .click_submit_btn()
 
         HomePage().notification.open_issue()
