@@ -4,7 +4,7 @@ import string
 import pytest
 
 from src.sel.pages.create_issue_page import CreateIssuePage
-from src.sel.pages.header import Header
+from src.sel.widgets.header import Header
 from src.sel.pages.search_page import SearchPage
 from src.sel.pages.home_page import HomePage
 from test.selenium_tests.test_base import BaseTest

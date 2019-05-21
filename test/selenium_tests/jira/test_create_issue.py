@@ -34,25 +34,3 @@ class TestCreateIssues(BaseTest):
             .set_summary(long_summary) \
             .click_submit_btn().get_error()
         assert error.__contains__("Summary must be less than 255 characters.")
-
-    def test_login(self):
-        LoginPage().open() \
-            .enter_username("DmytroKarpenko") \
-            .enter_password("DmytroKarpenko") \
-            .click_login()
-
-        HomePage().header.click_create_btn()
-
-        CreateIssuePage().set_project("Webinar") \
-            .set_issue_type("Story") \
-            .set_summary("My issue") \
-            .click_submit_btn()
-
-        HomePage().notification.open_issue()
-
-        IssuePage().click_edit_btn()
-
-        CreateIssuePage().set_summary("upd") \
-            .set_assignee("DmytroKarpenko") \
-            .set_priority("High") \
-            .click_update_btn()

@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
-from src.sel.pages.notification import Notification
-from src.sel.pages.header import Header
+from src.sel.widgets.notification import Notification
+from src.sel.widgets.header import Header
 from src.util.driver_container import DriverContainer
 
 from src.sel.elements.base_element import BaseElement

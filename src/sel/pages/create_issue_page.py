@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 
 from src.sel.pages.base_page import BasePage
 from src.sel.elements.base_element import BaseElement
-from src.sel.pages.header import Header
+from src.sel.widgets.header import Header
 from src.util.driver_container import DriverContainer
 
 
@@ -43,3 +43,12 @@ class CreateIssuePage(BasePage):
     def click_update_btn(self):
         BaseElement((By.ID, "edit-issue-submit")).wait_until_ready().click()
         return self
+
+    def get_summary(self):
+        return BaseElement((By.ID, "summary-val")).wait_until_ready().text
+
+    def get_assignee(self):
+        return BaseElement((By.ID, "assignee-val")).wait_until_ready().text
+
+    def get_priority(self):
+        return BaseElement((By.ID, "priority-val")).wait_until_ready().text

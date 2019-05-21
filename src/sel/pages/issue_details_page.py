@@ -1,13 +1,13 @@
 from selenium.webdriver.common.by import By
 
+from src.sel.pages.base_page import BasePage
 from src.sel.elements.base_element import BaseElement
-from src.sel.pages.create_issue_page import CreateIssuePage
-from src.sel.pages.notification import Notification
-from src.sel.pages.header import Header
+from src.sel.widgets.header import Header
+from src.sel.widgets.notification import Notification
 from src.util.driver_container import DriverContainer
 
 
-class IssuePage:
+class IssuePage(BasePage):
     notification = Notification()
     header = Header()
 
