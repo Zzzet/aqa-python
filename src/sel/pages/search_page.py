@@ -19,12 +19,12 @@ class SearchPage(BasePage):
 
     def enter_query(self, query):
         self.backdrop_dissapears()
-        BaseElement((By.ID, "advanced-search")).wait_until_ready().send_keys(query)
+        BaseElement((By.ID, "advanced-search")).set_value(query)
         return self
 
     def click_search_btn(self):
         self.backdrop_dissapears()
-        BaseElement((By.CSS_SELECTOR, "[class*='search-button']")).wait_until_ready().click()
+        BaseElement((By.CSS_SELECTOR, "[class*='search-button']")).click()
         return self
 
     def get_issue_count(self):

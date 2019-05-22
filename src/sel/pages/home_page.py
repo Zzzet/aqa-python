@@ -1,11 +1,10 @@
 from selenium.webdriver.common.by import By
 
-from src.sel.widgets.notification import Notification
-from src.sel.widgets.header import Header
-from src.util.driver_container import DriverContainer
-
 from src.sel.elements.base_element import BaseElement
 from src.sel.pages.base_page import BasePage
+from src.sel.widgets.header import Header
+from src.sel.widgets.notification import Notification
+from src.util.driver_container import DriverContainer
 
 
 class HomePage(BasePage):

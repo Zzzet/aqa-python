@@ -1,7 +1,7 @@
 from typing import List
 
 from selenium.common.exceptions import ElementClickInterceptedException, StaleElementReferenceException, \
-    NoSuchElementException, ElementNotVisibleException
+    NoSuchElementException, ElementNotVisibleException, ElementNotInteractableException
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions as EC
@@ -24,6 +24,7 @@ class BaseElement:
                                 ignored_exceptions=(ElementClickInterceptedException,
                                                     ElementNotVisibleException,
                                                     NoSuchElementException,
+                                                    ElementNotInteractableException,
                                                     StaleElementReferenceException)).until(
             EC.element_to_be_clickable(self.selector))
         return element
@@ -47,3 +48,10 @@ class BaseElement:
         elements = self.driver.find_elements(self.selector[0], self.selector[1])
         return elements
 
+    def set_value(self, text: str):
+        self.wait_until_ready().send_keys(text)
+        return self
+
+    def click(self):
+        self.wait_until_ready().click()
+        return self

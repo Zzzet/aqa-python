@@ -7,6 +7,8 @@ from src.util.driver_container import DriverContainer
 
 class LoginPage(BasePage):
 
+    login_btn = (By.ID, "login")
+
     def __init__(self):
         self.driver = DriverContainer().get_driver(DriverContainer)
 
@@ -15,19 +17,19 @@ class LoginPage(BasePage):
         return self
 
     def enter_username(self, username):
-        BaseElement((By.ID, "login-form-username")).wait_until_ready().send_keys(username)
+        BaseElement((By.ID, "login-form-username")).set_value(username)
         return self
 
     def enter_password(self, password):
-        BaseElement((By.ID, "login-form-password")).wait_until_ready().send_keys(password)
+        BaseElement((By.ID, "login-form-password")).set_value(password)
         return self
 
     def click_login(self):
-        BaseElement((By.ID, "login")).wait_until_visible().click()
+        BaseElement(self.login_btn).click()
         return self
 
     def login_as(self, user, password):
         self.enter_username(user)
         self.enter_password(password)
         self.click_login()
-        BaseElement((By.ID, "login")).wait_until_not_visible()
+        BaseElement(self.login_btn).wait_until_not_visible()

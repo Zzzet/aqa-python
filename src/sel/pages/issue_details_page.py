@@ -15,12 +15,12 @@ class IssuePage(BasePage):
         self.driver = DriverContainer().get_driver(DriverContainer)
 
     def click_edit_btn(self):
-        BaseElement((By.ID, "edit-issue")).wait_until_ready().click()
+        BaseElement((By.ID, "edit-issue")).click()
 
     def click_more_btn(self):
-        BaseElement((By.ID, "opsbar-operations_more")).wait_until_ready().click()
+        BaseElement((By.ID, "opsbar-operations_more")).click()
         return self
 
     def click_delete(self):
-        BaseElement((By.ID, "delete-issue")).wait_until_ready().click()
+        BaseElement((By.ID, "delete-issue")).click()
         return self

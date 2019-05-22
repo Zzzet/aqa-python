@@ -15,11 +15,11 @@ class Header(BasePage):
 
     def click_create_btn(self, ):
         self.backdrop_dissapears()
-        BaseElement((By.ID, "create_link")).wait_until_ready().click()
+        BaseElement((By.ID, "create_link")).click()
         return self
 
     def open_search(self, ):
         self.backdrop_dissapears()
-        BaseElement((By.ID, "quickSearchInput")).wait_until_ready().click()
-        BaseElement((By.ID, "quickSearchInput")).wait_until_ready().send_keys(Keys.ENTER)
+        BaseElement((By.ID, "quickSearchInput")).click()
+        BaseElement((By.ID, "quickSearchInput")).set_value(Keys.ENTER)
         return self

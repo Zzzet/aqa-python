@@ -8,6 +8,7 @@ from test.selenium_tests.test_base import BaseTest
 
 class TestJiraLogin(BaseTest):
 
+
     def test_login_successfull(self):
         LoginPage().open() \
             .login_as("DmytroKarpenko", "DmytroKarpenko")
