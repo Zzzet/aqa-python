@@ -34,5 +34,5 @@ class SearchPage(BasePage):
 
     def get_search_message(self) -> str:
         self.details_loaded()
-        text = BaseElement((By.CSS_SELECTOR, "[class='details-layout']")).get_value()
+        text = BaseElement((By.CSS_SELECTOR, "[class*='results-message']")).get_value()
         return text
