@@ -10,11 +10,11 @@ class BaseTest:
 
     @pytest.fixture(scope="function", autouse=True)
     def setup(self, request):
-        print("  SETUP")
+        print(f"SETUP {request.node.name}")
         base_url = request.config.getoption("--url")
         DriverContainer().create_driver(DriverContainer, base_url)
         yield
-        print("  TEARDOWN ")
+        print(f"TEARDOWN {request.node.name}")
         DriverContainer.close_driver(DriverContainer)
 
     @pytest.fixture(scope="function", autouse=True)
