@@ -11,7 +11,7 @@ class BasePage:
         BaseElement((By.CSS_SELECTOR, "[class='details-layout'] > [class='loading']")).wait_until_not_visible()
 
     def get_aui_error(self) -> str:
-        return BaseElement((By.CSS_SELECTOR, "[class*='aui-message-error']")).wait_until_ready().text
+        return BaseElement((By.CSS_SELECTOR, "[class*='aui-message-error']")).get_value()
 
     def get_error(self) -> str:
-        return BaseElement((By.CSS_SELECTOR, "[class='error']")).wait_until_ready().text
+        return BaseElement((By.CSS_SELECTOR, "[class='error']")).get_value()

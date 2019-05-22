@@ -1,7 +1,7 @@
 import pytest
 from src.sel.pages.home_page import HomePage
 from src.sel.pages.login_page import LoginPage
-from src.sel.pages.create_issue_page import CreateIssuePage
+from src.sel.pages.create_issue_page import CreateIssuePopup
 
 
 def pytest_addoption(parser):

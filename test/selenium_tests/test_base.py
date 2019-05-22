@@ -1,6 +1,6 @@
 import pytest
 
-from src.sel.pages.create_issue_page import CreateIssuePage
+from src.sel.pages.create_issue_page import CreateIssuePopup
 from src.sel.pages.home_page import HomePage
 from src.sel.pages.login_page import LoginPage
 from src.util.driver_container import DriverContainer
@@ -27,7 +27,7 @@ class BaseTest:
     def create_issue(self):
         HomePage().header.click_create_btn()
 
-        CreateIssuePage().set_project("Webinar") \
+        CreateIssuePopup().set_project("Webinar") \
             .set_issue_type("Story") \
             .set_summary("My issue") \
             .click_submit_btn()

@@ -1,7 +1,4 @@
-import time
-
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 
 from src.sel.elements.base_element import BaseElement
 from src.sel.pages.base_page import BasePage
@@ -12,6 +9,7 @@ class SearchPage(BasePage):
 
     def __init__(self):
         self.driver = DriverContainer().get_driver(DriverContainer)
+        self.backdrop_dissapears()
 
     def open(self):
         self.driver.get(DriverContainer.base_url+"issues/?jql=")
@@ -36,5 +34,5 @@ class SearchPage(BasePage):
 
     def get_search_message(self) -> str:
         self.details_loaded()
-        text = BaseElement((By.CSS_SELECTOR, "[class='details-layout']")).wait_until_ready().text
+        text = BaseElement((By.CSS_SELECTOR, "[class='details-layout']")).get_value()
         return text

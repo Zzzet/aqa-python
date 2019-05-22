@@ -11,8 +11,5 @@ class HomePage(BasePage):
     notification = Notification()
     header = Header()
 
-    def __init__(self):
-        self.driver = DriverContainer().get_driver(DriverContainer)
-
     def introduction_text(self) -> str:
-        return BaseElement((By.CSS_SELECTOR, "#gadget-10000")).wait_until_ready().text
+        return BaseElement((By.CSS_SELECTOR, "#gadget-10000")).get_value()

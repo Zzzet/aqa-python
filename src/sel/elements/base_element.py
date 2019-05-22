@@ -55,3 +55,6 @@ class BaseElement:
     def click(self):
         self.wait_until_ready().click()
         return self
+
+    def get_value(self) -> str:
+        return self.wait_until_ready().text

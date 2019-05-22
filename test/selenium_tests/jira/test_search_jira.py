@@ -3,7 +3,7 @@ import string
 
 import pytest
 
-from src.sel.pages.create_issue_page import CreateIssuePage
+from src.sel.pages.create_issue_page import CreateIssuePopup
 from src.sel.widgets.header import Header
 from src.sel.pages.search_page import SearchPage
 from src.sel.pages.home_page import HomePage
@@ -47,7 +47,7 @@ class TestJiraSearch(BaseTest):
     def create_issue(self, summary):
         Header().click_create_btn()
 
-        CreateIssuePage().set_project("Webinar") \
+        CreateIssuePopup().set_project("Webinar") \
             .set_issue_type("Story") \
             .set_summary(summary) \
             .click_submit_btn()
