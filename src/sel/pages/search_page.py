@@ -6,6 +6,7 @@ from src.util.driver_container import DriverContainer
 
 
 class SearchPage(BasePage):
+    issue_list =  (By.CSS_SELECTOR, "[class='issue-list'] > [data-key]")
 
     def __init__(self):
         self.driver = DriverContainer().get_driver(DriverContainer)
@@ -22,7 +23,10 @@ class SearchPage(BasePage):
         return self
 
     def click_search_btn(self):
+        issues =  BaseElement(self.issue_list);
+        issue = issues.get_list()[0]
         BaseElement((By.CSS_SELECTOR, "[class*='search-button']")).click()
+        issues.wait_until_stale(issue)
         return self
 
     def get_issue_count(self):

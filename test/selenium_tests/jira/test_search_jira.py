@@ -51,9 +51,3 @@ class TestJiraSearch(BaseTest):
             .set_issue_type("Story") \
             .set_summary(summary) \
             .click_submit_btn()
-
-    # no such issue reporter = DmytroKarpenko and status = Resolved
-
-    # 5 issues reporter = currentUser() and summary ~  "upd-123"
-
-    # 1 issue reporter = currentUser() and summary ~  "upd-123"

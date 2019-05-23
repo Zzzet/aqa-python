@@ -34,6 +34,11 @@ class BaseElement:
             EC.visibility_of_element_located(self.selector))
         return element
 
+    def wait_until_stale(self, el) -> bool:
+        status = WebDriverWait(self.driver, self.timeout).until(
+            EC.staleness_of(el))
+        return status
+
     def wait_until_present(self) -> WebElement:
         element = WebDriverWait(self.driver, self.timeout).until(
             EC.presence_of_element_located(self.selector))
