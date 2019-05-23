@@ -20,7 +20,7 @@ class CreateIssuePopup(BasePage):
         return self
 
     def set_assignee(self, assignee):
-        BaseElement((By.ID, "assignee-field")).send(assignee).send(Keys.TAB)
+        BaseElement((By.ID, "assignee-field")).send(assignee).send(Keys.ENTER)
         return self
 
     def set_priority(self, assignee):
