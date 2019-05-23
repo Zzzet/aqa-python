@@ -8,23 +8,23 @@ from src.sel.pages.base_page import BasePage
 class CreateIssuePopup(BasePage):
 
     def set_project(self, name):
-        BaseElement((By.ID, "project-field")).set_value(name).set_value(Keys.TAB)
+        BaseElement((By.ID, "project-field")).send(name).send(Keys.TAB)
         return self
 
     def set_issue_type(self, type):
-        BaseElement((By.ID, "issuetype-field")).set_value(type).set_value(Keys.TAB)
+        BaseElement((By.ID, "issuetype-field")).send(type).send(Keys.TAB)
         return self
 
     def set_summary(self, summary):
-        BaseElement((By.ID, "summary")).set_value(summary).set_value(Keys.TAB)
+        BaseElement((By.ID, "summary")).send(summary).send(Keys.TAB)
         return self
 
     def set_assignee(self, assignee):
-        BaseElement((By.ID, "assignee-field")).set_value(assignee).set_value(Keys.TAB)
+        BaseElement((By.ID, "assignee-field")).send(assignee).send(Keys.TAB)
         return self
 
     def set_priority(self, assignee):
-        BaseElement((By.ID, "priority-field")).set_value(assignee).set_value(Keys.TAB)
+        BaseElement((By.ID, "priority-field")).send(assignee).send(Keys.TAB)
         return self
 
     def click_submit_btn(self):

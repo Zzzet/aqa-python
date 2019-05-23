@@ -53,7 +53,7 @@ class BaseElement:
         elements = self.driver.find_elements(self.selector[0], self.selector[1])
         return elements
 
-    def set_value(self, text: str):
+    def send(self, text: str):
         self.wait_until_ready().send_keys(text)
         return self
 

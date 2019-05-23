@@ -21,5 +21,5 @@ class Header(BasePage):
     def open_search(self, ):
         self.backdrop_dissapears()
         BaseElement((By.ID, "quickSearchInput")).click()
-        BaseElement((By.ID, "quickSearchInput")).set_value(Keys.ENTER)
+        BaseElement((By.ID, "quickSearchInput")).send(Keys.ENTER)
         return self

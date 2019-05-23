@@ -17,11 +17,11 @@ class LoginPage(BasePage):
         return self
 
     def enter_username(self, username):
-        BaseElement((By.ID, "login-form-username")).set_value(username)
+        BaseElement((By.ID, "login-form-username")).send(username)
         return self
 
     def enter_password(self, password):
-        BaseElement((By.ID, "login-form-password")).set_value(password)
+        BaseElement((By.ID, "login-form-password")).send(password)
         return self
 
     def click_login(self):

@@ -21,7 +21,6 @@ class TestJiraSearch(BaseTest):
 
         issue_count = SearchPage().open() \
             .enter_query(f"reporter = currentUser() and summary ~  '{issue_summary}'") \
-            .click_search_btn() \
             .get_issue_count()
         assert issue_count == 5, "Issue count should be = 5"
 
@@ -31,14 +30,12 @@ class TestJiraSearch(BaseTest):
 
         issue_count = SearchPage().open() \
             .enter_query(f"reporter = currentUser() and summary ~  '{issue_summary}'") \
-            .click_search_btn() \
             .get_issue_count()
         assert issue_count == 1, "Issue count should be = 1"
 
     def test_search_no_result(self):
         search_message = SearchPage().open() \
             .enter_query("reporter = currentUser() and status = Canceled") \
-            .click_search_btn() \
             .get_search_message()
 
         assert search_message.__contains__("No issues were found to match your search"), \
