@@ -22,7 +22,6 @@ class BaseTest:
         self.name = request.config.getoption("name")
         self.password = request.config.getoption("password")
 
-
     @pytest.fixture
     def create_issue(self):
         HomePage().header.click_create_btn()

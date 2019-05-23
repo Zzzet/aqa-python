@@ -1,3 +1,4 @@
+import allure
 from selenium.webdriver.common.by import By
 
 from src.sel.elements.base_element import BaseElement
@@ -11,5 +12,6 @@ class HomePage(BasePage):
     notification = Notification()
     header = Header()
 
+    @allure.step
     def introduction_text(self) -> str:
         return BaseElement((By.CSS_SELECTOR, "#gadget-10000")).get_value()

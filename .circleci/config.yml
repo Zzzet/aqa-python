@@ -11,5 +11,12 @@ jobs:
                   pipenv install
           - run:
                 command: |
-                  pipenv run pytest
+                  pipenv run pytest --alluredir=./allure_results
+          - run:
+                command: |
+                  wget http://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.10.0/allure-commandline-2.10.0.zip
+                  unzip allure-commandline-2.10.0.zip
+                  ./allure-2.10.0/bin/allure generate allure_results/ -o allure-report --clean
+          - store_test_results:
+              path: allure_results
 
