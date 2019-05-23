@@ -13,20 +13,20 @@ class SearchPage(BasePage):
 
     def open(self):
         self.driver.get(DriverContainer.base_url+"issues/?jql=")
+        self.backdrop_dissapears()
+        self.details_loaded()
         return self
 
     def enter_query(self, query):
-        self.backdrop_dissapears()
         BaseElement((By.ID, "advanced-search")).set_value(query)
         return self
 
     def click_search_btn(self):
-        self.backdrop_dissapears()
         BaseElement((By.CSS_SELECTOR, "[class*='search-button']")).click()
         return self
 
     def get_issue_count(self):
-        self.backdrop_dissapears()
+        self.details_loaded()
         issues = (By.CSS_SELECTOR, "[class='issue-list'] > [data-key]")
         BaseElement(issues).wait_until_ready()
         el_list = BaseElement(issues).get_list()
