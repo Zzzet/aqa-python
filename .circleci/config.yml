@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
@@ -12,14 +12,17 @@ jobs:
       - run:
           command: |
             pipenv run pytest --alluredir=./allure-results
-  gen_report:
-    steps:
-      - run:
-          command: |
-            sudo apt install unzip wget
-            wget http://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.10.0/allure-commandline-2.10.0.zip
-            unzip allure-commandline-2.10.0.zip
-            ./allure-2.10.0/bin/allure generate allure-results -o allure-report --clean
+      - when:
+          condition: always
+          steps:
+          - run:
+              command: |
+                sudo apt install unzip wget
+                wget http://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.10.0/allure-commandline-2.10.0.zip
+                unzip allure-commandline-2.10.0.zip
+                ./allure-2.10.0/bin/allure generate allure-results -o allure-report --clean
+      - store_artifacts:
+          path: allure-report
+          destination: build
       - store_test_results:
           path: allure-report
-
