@@ -2,7 +2,7 @@ from pathlib import Path
 
 import json
 from src.xml.XmlProcessor import XmlProcessor
-from src.util.FileUtils import get_abs_path
+from src.util.file_utils import get_abs_path
 from dictdiffer import diff
 
 test_data_path = "samples/xml/test_data.xml"

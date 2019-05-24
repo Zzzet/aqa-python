@@ -1,5 +1,5 @@
 import json
-from src.util.FileUtils import get_abs_path
+from src.util.file_utils import get_abs_path
 from pathlib import Path
 import xmltodict
 
