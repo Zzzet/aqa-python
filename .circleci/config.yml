@@ -13,6 +13,7 @@ jobs:
           command: |
             pipenv run pytest --alluredir=./allure-results
   gen_report:
+    steps:
       - run:
           command: |
             sudo apt install unzip wget
