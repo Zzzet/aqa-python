@@ -1,15 +1,28 @@
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
       - image: circleci/python:3.7.3-stretch-browsers
     steps:
-          - checkout
+      - checkout
+      - run:
+          command: |  # use pipenv to install dependencies
+            sudo pip install pipenv
+            pipenv install
+      - run:
+          command: |
+            pipenv run pytest --alluredir=./allure-results
+      - when:
+          condition: always
+          steps:
           - run:
-                command: |  # use pipenv to install dependencies
-                  sudo pip install pipenv
-                  pipenv install
-          - run:
-                command: |
-                  pipenv run pytest
-
+              command: |
+                sudo apt install unzip wget
+                wget http://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.10.0/allure-commandline-2.10.0.zip
+                unzip allure-commandline-2.10.0.zip
+                ./allure-2.10.0/bin/allure generate allure-results -o allure-report --clean
+      - store_artifacts:
+          path: allure-report
+          destination: build
+      - store_test_results:
+          path: allure-report

@@ -1,7 +1,6 @@
-import pytest
-from src.sel.pages.home_page import HomePage
-from src.sel.pages.login_page import LoginPage
-from src.sel.pages.create_issue_page import CreateIssuePopup
+import allure
+
+from src.util.driver_container import DriverContainer
 
 
 def pytest_addoption(parser):
@@ -22,5 +21,7 @@ def pytest_addoption(parser):
     )
 
 
-
-
+def pytest_exception_interact(node, call, report):
+    allure.attach(DriverContainer().get_driver(DriverContainer).get_screenshot_as_png(),
+                  "screenshot",
+                  allure.attachment_type.PNG)

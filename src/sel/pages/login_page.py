@@ -1,3 +1,4 @@
+import allure
 from selenium.webdriver.common.by import By
 
 from src.sel.pages.base_page import BasePage
@@ -12,22 +13,27 @@ class LoginPage(BasePage):
     def __init__(self):
         self.driver = DriverContainer().get_driver(DriverContainer)
 
+    @allure.step
     def open(self):
         self.driver.get(DriverContainer.base_url)
         return self
 
+    @allure.step
     def enter_username(self, username):
         BaseElement((By.ID, "login-form-username")).send(username)
         return self
 
+    @allure.step
     def enter_password(self, password):
         BaseElement((By.ID, "login-form-password")).send(password)
         return self
 
+    @allure.step
     def click_login(self):
         BaseElement(self.login_btn).click()
         return self
 
+    @allure.step
     def login_as(self, user, password):
         self.enter_username(user)
         self.enter_password(password)
