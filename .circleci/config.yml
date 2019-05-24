@@ -35,3 +35,12 @@ jobs:
           destination: build
       - store_test_results:
           path: allure-report
+
+workflows:
+  version: 2
+  workflow:
+    jobs:
+      - build
+      - generate_report:
+          requires:
+            - build
