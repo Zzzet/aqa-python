@@ -12,6 +12,10 @@ class HomePage(BasePage):
     notification = Notification()
     header = Header()
 
+    
+    def __init__(self):
+        self.backdrop_dissapears()
+        
     @allure.step
     def introduction_text(self) -> str:
         return BaseElement((By.CSS_SELECTOR, "#gadget-10000")).get_value()
