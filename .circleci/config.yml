@@ -24,15 +24,16 @@ jobs:
       - image: circleci/python:3.7.3-stretch-browsers
     steps:
       - attach_workspace:
-          at: ./allure-results
+          at: /tmp/allure-results
       - run:
           command: |
+            ls /tmp/allure-results
             wget http://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.10.0/allure-commandline-2.10.0.zip
             unzip allure-commandline-2.10.0.zip
-            ./allure-2.10.0/bin/allure generate ./allure-results -o ./allure-report --clean
+            ./allure-2.10.0/bin/allure generate /tmp/allure-results -o ./allure-report --clean
       - store_artifacts:
           path: allure-report
-          destination: build
+          destination: report
       - store_test_results:
           path: allure-report
 
