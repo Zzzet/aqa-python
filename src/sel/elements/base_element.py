@@ -12,7 +12,7 @@ from src.util.driver_container import DriverContainer
 
 
 class BaseElement:
-    timeout = 20
+    timeout = 30
     driver: WebDriver
 
     def __init__(self, selector):
