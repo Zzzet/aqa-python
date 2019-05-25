@@ -15,10 +15,10 @@ jobs:
       - persist_to_workspace:
           # Must be an absolute path, or relative path from working_directory. This is a directory on the container which is
           # taken to be the root directory of the workspace.
-          root: allure-results
+          root: .
           # Must be relative path from root
           paths:
-            - allure-results
+            - allure-results/*
   generate_report:
     docker:
       - image: circleci/python:3.7.3-stretch-browsers
