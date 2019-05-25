@@ -5,13 +5,6 @@ jobs:
       - image: circleci/python:3.7.3-stretch-browsers
     steps:
       - checkout
-      - persist_to_workspace:
-          # Must be an absolute path, or relative path from working_directory. This is a directory on the container which is
-          # taken to be the root directory of the workspace.
-          root: .
-          # Must be relative path from root
-          paths:
-            - allure-results/*
       - run:
           command: |
             sudo pip install pipenv
@@ -19,30 +12,18 @@ jobs:
       - run:
           command: |
             pipenv run pytest --alluredir=./allure-results
-
-  generate_report:
-    docker:
-      - image: circleci/python:3.7.3-stretch-browsers
-    steps:
-      - attach_workspace:
-          at: /tmp/allure-results
       - run:
+          when: always
           command: |
-            ls /tmp/allure-results
+            ls /allure-results
             wget http://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.10.0/allure-commandline-2.10.0.zip
             unzip allure-commandline-2.10.0.zip
-            ./allure-2.10.0/bin/allure generate /tmp/allure-results -o ./allure-report --clean
+            ./allure-2.10.0/bin/allure generate ./allure-results -o ./allure-report --clean
       - store_artifacts:
+          when: always
           path: allure-report
           destination: report
       - store_test_results:
+          when: always
           path: allure-report
 
-workflows:
-  version: 2
-  workflow:
-    jobs:
-      - build
-      - generate_report:
-          requires:
-            - build
