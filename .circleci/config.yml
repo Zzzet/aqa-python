@@ -15,7 +15,6 @@ jobs:
       - run:
           when: always
           command: |
-            ls /allure-results
             wget http://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.10.0/allure-commandline-2.10.0.zip
             unzip allure-commandline-2.10.0.zip
             ./allure-2.10.0/bin/allure generate ./allure-results -o ./allure-report --clean
