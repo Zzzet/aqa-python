@@ -11,6 +11,7 @@ class LoginPage(BasePage):
     login_btn = (By.ID, "login")
 
     def __init__(self):
+        BaseElement(self.login_btn).wait_until_visible()
         self.driver = DriverContainer().get_driver(DriverContainer)
 
     @allure.step
