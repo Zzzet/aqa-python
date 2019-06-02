@@ -5,3 +5,4 @@ dictdiffer
 selenium
 webdriver_manager
 allure-pytest
+requests

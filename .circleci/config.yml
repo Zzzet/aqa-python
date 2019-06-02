@@ -14,7 +14,7 @@ jobs:
             pipenv install
       - run:
           command: |
-            pipenv run pytest --alluredir=./allure-results
+            pipenv run pytest test/api_tests/ --alluredir=./allure-results
       - run:
           when: always
           command: |
