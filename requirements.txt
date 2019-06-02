@@ -6,3 +6,5 @@ selenium
 webdriver_manager
 allure-pytest
 requests
+pytest-rerunfailures
+pytest-xdist
