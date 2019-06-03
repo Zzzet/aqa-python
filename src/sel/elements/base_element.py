@@ -2,6 +2,7 @@ from typing import List
 
 from selenium.common.exceptions import ElementClickInterceptedException, StaleElementReferenceException, \
     NoSuchElementException, ElementNotVisibleException, ElementNotInteractableException
+from selenium.webdriver import ActionChains
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions as EC
@@ -11,7 +12,7 @@ from src.util.driver_container import DriverContainer
 
 
 class BaseElement:
-    timeout = 20
+    timeout = 30
     driver: WebDriver
 
     def __init__(self, selector):
@@ -59,6 +60,12 @@ class BaseElement:
 
     def click(self):
         self.wait_until_ready().click()
+        return self
+
+    def scroll_to(self):
+        ActionChains(self.driver). \
+            move_to_element(self.wait_until_ready()) \
+            .perform()
         return self
 
     def get_value(self) -> str:

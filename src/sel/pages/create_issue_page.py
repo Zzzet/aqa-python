@@ -25,7 +25,7 @@ class CreateIssuePopup(BasePage):
 
     @allure.step
     def set_assignee(self, assignee):
-        BaseElement((By.ID, "assignee-field")).send(assignee).send(Keys.ENTER)
+        BaseElement((By.ID, "assignee-field")).send(assignee).send(Keys.TAB)
         return self
 
     @allure.step
@@ -35,11 +35,11 @@ class CreateIssuePopup(BasePage):
 
     @allure.step
     def click_submit_btn(self):
-        BaseElement((By.ID, "create-issue-submit")).click()
+        BaseElement((By.ID, "create-issue-submit")).scroll_to().click()
         return self
 
     @allure.step
     def click_update_btn(self):
-        BaseElement((By.ID, "edit-issue-submit")).click()
+        BaseElement((By.ID, "edit-issue-submit")).scroll_to().click()
         return self
 

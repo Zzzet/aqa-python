@@ -27,7 +27,7 @@ class TestCreateIssues(BaseTest):
     def test_update_assignee(self, create_issue):
         IssuePage().click_edit_btn()
         CreateIssuePopup() \
-            .set_assignee("Artur Piluck") \
+            .set_assignee("DmytroKarpenko") \
             .click_update_btn()
         assignee = IssuePage().get_assignee()
-        assert assignee.__contains__("Artur Piluck")
+        assert assignee.__contains__("DmytroKarpenko")
