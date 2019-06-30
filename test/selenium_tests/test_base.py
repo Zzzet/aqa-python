@@ -4,15 +4,16 @@ from src.sel.pages.create_issue_page import CreateIssuePopup
 from src.sel.pages.home_page import HomePage
 from src.sel.pages.login_page import LoginPage
 from src.util.driver_container import DriverContainer
-
+import time
 
 class BaseTest:
 
     @pytest.fixture(scope="function", autouse=True)
     def setup(self, request):
+        # time.sleep(30)
         print(f"SETUP {request.node.name}")
         base_url = request.config.getoption("--url")
-        DriverContainer().create_driver(DriverContainer, base_url)
+        DriverContainer().create_driver_remote(DriverContainer, base_url)
         yield
         print(f"TEARDOWN {request.node.name}")
         DriverContainer.close_driver(DriverContainer)

@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.remote.webdriver import WebDriver
 from webdriver_manager.chrome import ChromeDriverManager
+import pytest
 
 
 class DriverContainer:
@@ -20,3 +21,14 @@ class DriverContainer:
     @staticmethod
     def close_driver(cls):
         cls.driver.close()
+
+    @staticmethod
+    def create_driver_remote(cls, base_url):
+        host = pytest.config.getoption("-H")
+        port = pytest.config.getoption("-P")
+        cls.driver = webdriver.Remote(
+            desired_capabilities=webdriver.DesiredCapabilities.CHROME,
+            command_executor=f"http://{host}:{port}/wd/hub"
+        )
+        cls.driver.maximize_window()
+        cls.base_url = base_url
